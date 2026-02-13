@@ -518,6 +518,36 @@
     object-fit: cover;
   }
 }
+
+        /* ===== FIX MOBILE: logo maior + foto sem círculo azul ===== */
+@media (max-width: 768px){
+
+  /* LOGO maior no celular */
+  .logo img,
+  img.logo-image{
+    height: 110px !important;
+    width: auto !important;
+    max-width: 85vw !important;
+  }
+
+  /* Remove círculo/anel azul do container */
+  .authority-image-placeholder{
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  /* Foto redonda, sem moldura azul */
+  .authority-image-placeholder img{
+    width: 210px !important;
+    height: 210px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
     </style>
 </head>
 <body>
